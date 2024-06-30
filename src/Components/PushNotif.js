@@ -49,9 +49,10 @@ function PushNotif({ acc, total, topic }) {
         markUnans(acc, total)
       }
       localStorage.setItem('questionsData', JSON.stringify(data))
-      undo()
+  
     }
-  }, [undo,data, index, acc, total, topic])
+  }, [data, index, acc, total, topic])
+  undo();
 
   return <></>
 }
